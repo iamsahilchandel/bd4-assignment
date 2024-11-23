@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js",
+    "start": "npm run db:seed && node server.js",
     "db:seed": "node seed-data.js"
   },
   "dependencies": {
